@@ -1,26 +1,13 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-  <div class="navbar-nav">
-    <!-- Router Links added -->
-    <a class="nav-item nav-link" routerLink="/">Home</a>
-    <!-- Login Page Link -->
-    <!-- <a class="nav-item nav-link" routerLink="/login">Login</a> -->
-    <a class="nav-item nav-link" routerLink="/tenants">Tenants</a>
-    <a class="nav-item nav-link" routerLink="/finance">Finance</a>
-    <a class="nav-item nav-link" routerLink="/properties">Properties</a>
-    <a class="nav-item nav-link" routerLink="/reports">Reports</a>
-    <!-- <a class="nav-item nav-link" routerLink="/logout-page">Logout</a> -->
-    <a class="nav-item nav-link" routerLink="/settings">Settings</a>
-    <a class="nav-item nav-link" routerLink="/logout">Logout</a>
-  </div>
-</nav>
+<!-- Router Links added -->
+<a class="nav-item nav-link" routerLink="/login">Login</a>
+<a class="nav-item nav-link" routerLink="/">Home</a>
+<a class="nav-item nav-link" routerLink="/tenants">Tenants</a>
+<a class="nav-item nav-link" routerLink="/finance">Finance</a>
+<a class="nav-item nav-link" routerLink="/properties">Properties</a>
+<a class="nav-item nav-link" routerLink="/reports">Reports</a>
+<a class="nav-item nav-link" routerLink="/settings">Settings</a>
+<a class="nav-item nav-link" routerLink="/logout">Logout</a>
 
 <!-- main content container -->
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 offset-sm-2">
-        <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
-</div>
+
+<router-outlet></router-outlet>

@@ -9,10 +9,11 @@ import { TenantsMasterListComponent } from './tenants-master-list/tenants-master
 import { FinanceMasterListComponent } from './finance-master-list/finance-master-list.component';
 import { ReportsListComponent } from './reports-list/reports-list.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-
-import { appRoutingModule } from './app.routing';
 import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { LogoutComponent } from './logout/logout.component';
+
+import { appRoutingModule } from './app.routing';
+
 
 
 @NgModule({
