@@ -13,6 +13,7 @@ import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { LogoutComponent } from './logout/logout.component';
 
 import { appRoutingModule } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -29,7 +30,7 @@ import { appRoutingModule } from './app.routing';
     SettingsPageComponent,
     LogoutComponent
   ],
-  imports: [BrowserModule, appRoutingModule],
+  imports: [BrowserModule, appRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
