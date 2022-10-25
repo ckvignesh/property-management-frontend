@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -13,7 +16,6 @@ import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { LogoutComponent } from './logout/logout.component';
 
 import { appRoutingModule } from './app.routing';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -30,7 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SettingsPageComponent,
     LogoutComponent
   ],
-  imports: [BrowserModule, appRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, appRoutingModule, MatToolbarModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
 })
