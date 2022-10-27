@@ -13,6 +13,10 @@ import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { LogoutComponent } from './logout/logout.component';
 
 import { appRoutingModule } from './app.routing';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 
 
@@ -29,7 +33,7 @@ import { appRoutingModule } from './app.routing';
     SettingsPageComponent,
     LogoutComponent
   ],
-  imports: [BrowserModule, appRoutingModule],
+  imports: [BrowserModule, appRoutingModule, provideFirebaseApp(() => initializeApp(environment.firebase)), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())],
   providers: [],
   bootstrap: [AppComponent],
 })
